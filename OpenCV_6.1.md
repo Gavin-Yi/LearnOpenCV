@@ -44,7 +44,7 @@ $$ g = \sum f*h$$
 - 第七个参数，``int``类型的``borderType``，用于推断外部像素的某种边界模式，一般不管这个参数。
 
 &ensp;&ensp;&ensp;&ensp;``BoxFliter()``函数方框滤波所用的核表示如下：
-$$ K=\alpha \left[\begin{matrix} 1&1&1&...&...&1&1\\1&1&1&...&...&1&1\\...&...&...&...&...&...&...\\1&1&1&...&...&1&1 \end{matrix}\right]$$
+$$ K=\alpha \left[\begin{matrix} 1&1&1&...&...&1&1\\1&1&1&...&...&1&1\\...&...&...&...&...&...&...\\1&1&1&...&...&1&1 \end{matrix}\right] $$
 &ensp;&ensp;&ensp;&ensp;其中：
 $$ \alpha = \begin{cases}\frac{1}{ksize.width*ksize.height},当normalize=true时\\1,当normalize=false时 \end{cases}$$
 &ensp;&ensp;&ensp;&ensp;当``normalize=true``时，方框滤波就变成了均值滤波。归一化就是要把要处理的量缩放到一个范围内。
